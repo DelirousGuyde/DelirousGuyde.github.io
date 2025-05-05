@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  static-site:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/app
+    restart: always
