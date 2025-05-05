@@ -130,12 +130,41 @@
 						<div class="inner">
 							<header>
 								<h2>Ready to Modernize the Processes Citizens Actually Touch?</h2>
-								<p>Whether you run a county permitting office, a statewide trade association, or a nonprofit poised for its next grant cycle, Jautr can cut the red tape inside your own walls first. Fewer keystrokes for staff means faster outcomes for the people you serve.</p>
+								<p>Ready to make your public‑facing work run smoother? Share a few details and let Jautr cut the red tape—fast.</p>
 							</header>
-							<ul class="actions stacked">
-								<li><a href="#" class="button fit primary">Book Fit Call</a></li>
-								<li><a href="mailto:arthur@jautr.com" class="button fit">Email Us</a></li>
-							</ul>
+							<form id="fitCallForm" action="https://formspree.io/f/xzzrrzgl" method="POST">
+								<div class="row gtr-uniform">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="name" id="name" value="" placeholder="Name" required />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="email" name="email" id="email" value="" placeholder="Email" required />
+									</div>
+									<div class="col-12">
+										<select name="interest" id="interest" required>
+											<option value="">- What are you interested in? -</option>
+											<option value="Form Modernization">Form Modernization</option>
+											<option value="Data Integration">Data Integration</option>
+											<option value="Dashboard Creation">Dashboard Creation</option>
+											<option value="AI Automation">AI Automation</option>
+											<option value="Other">Other (Please specify)</option>
+										</select>
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Briefly describe your current challenges" rows="4"></textarea>
+									</div>
+									<!-- Honeypot field for bot protection -->
+									<div style="display:none">
+										<input type="text" name="_gotcha" id="_gotcha" />
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Book Fit Call" class="primary" /></li>
+											<li><a href="mailto:arthur@jautr.com" class="button">Email Us</a></li>
+										</ul>
+									</div>
+								</div>
+							</form>
 						</div>
 					</section>
 

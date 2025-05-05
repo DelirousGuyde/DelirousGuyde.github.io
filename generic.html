@@ -155,11 +155,40 @@
 								<hr />
 
 								<h3>Ready to Modernize?</h3>
-								<p>Whether you run a county permitting office, a statewide trade association, or a nonprofit poised for its next grant cycle, Jautr can cut the red tape inside your own walls first. Fewer keystrokes for staff means faster outcomes for the people you serve.</p>
-								<ul class="actions">
-									<li><a href="#" class="button primary">Book Fit Call</a></li>
-									<li><a href="mailto:art@jautr.com" class="button">Email art@jautr.com</a></li>
-								</ul>
+								<p>Ready to make your public‑facing work run smoother? Share a few details and let Jautr cut the red tape—fast.</p>
+								<form id="fitCallForm" action="https://formspree.io/f/xzzrrzgl" method="POST">
+									<div class="row gtr-uniform">
+										<div class="col-6 col-12-xsmall">
+											<input type="text" name="name" id="name" placeholder="Name" required />
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input type="email" name="email" id="email" placeholder="Email" required />
+										</div>
+										<div class="col-12">
+											<select name="interest" id="interest" required>
+												<option value="">- What are you interested in? -</option>
+												<option value="Form Modernization">Form Modernization</option>
+												<option value="Data Integration">Data Integration</option>
+												<option value="Dashboard Creation">Dashboard Creation</option>
+												<option value="AI Automation">AI Automation</option>
+												<option value="Other">Other (Please specify)</option>
+											</select>
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Briefly describe your current challenges" rows="4"></textarea>
+										</div>
+										<!-- Honeypot field for bot protection -->
+										<div style="display:none">
+											<input type="text" name="_gotcha" id="_gotcha" />
+										</div>
+										<div class="col-12">
+											<ul class="actions">
+												<li><input type="submit" value="Book Fit Call" class="primary" /></li>
+												<li><a href="mailto:arthur@jautr.com" class="button">Email Us</a></li>
+											</ul>
+										</div>
+									</div>
+								</form>
 								<p class="small">Jautr: practical, human‑centered automation for organizations that can't afford to move slowly.</p>
 							</div>
 						</section>
@@ -174,7 +203,7 @@
 							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Jautr</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Jautr</li>
 						</ul>
 					</footer>
 
